@@ -1,6 +1,6 @@
 {
 	"homepage": "https://dorkatzir.github.io/Validate-React-Forms",
-	"name": "validate-react-forms-without-a-library",
+	"name": "validate-react-forms",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -8,7 +8,7 @@
 		"dev": "vite",
 		"build": "vite build --base=./",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d dist",
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
