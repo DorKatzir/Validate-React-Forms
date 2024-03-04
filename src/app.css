@@ -14,7 +14,7 @@
 
  form{
     background-color: hsla(0, 0%, 100%, .5);
-    padding: 0px 60px;
+    padding: 0px 2rem;
     border-radius: 10px;
     filter: drop-shadow(3px 3px 5px hsla(0, 0%, 0%, .1));
 }
@@ -22,8 +22,8 @@
 h2{
     color: hsl(0 0% 0% / .65);
     text-align: center;
-    margin-block-start: 10px;
-    margin-block: 1rem;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
 }
 
 
