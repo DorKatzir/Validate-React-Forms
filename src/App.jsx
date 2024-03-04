@@ -32,6 +32,7 @@ const inputs = [
 		placeholder: 'Email',
 		errorMessage: 'It should be a valid email address!',
 		label: 'Email',
+		pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$',
 		required: true,
 	},
 	{
@@ -49,7 +50,7 @@ const inputs = [
 		errorMessage:
 			'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
 		label: 'Password',
-		pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+		pattern: '^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$',
 		required: true,
 	},
 	{
@@ -77,9 +78,11 @@ const inputs = [
 
   console.log(values)
   return (
+	<>
+
 		<div className='app'>
 			<form onSubmit={handleSubmit}>
-				<h1>Register</h1>
+			<h2>Form Validation</h2>
 				{
 					inputs.map(input => <FormInput 
 											key={input.id}
@@ -92,6 +95,7 @@ const inputs = [
         		<button>Submit</button>
 			</form>
 		</div>
+	</>
   )
 }
 

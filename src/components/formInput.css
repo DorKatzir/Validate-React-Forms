@@ -22,10 +22,19 @@ span{
     padding: 3px;
     color: red;
     display: none;
+    margin-block-start: -.7rem;
+    margin-block-end: 1rem;
 }
 
-input:invalid ~ span{
+input:invalid[focused="true"] {
+    border: 1px solid red;
+}
+input:invalid[focused="true"] ~ span{
     display: block;
+}
+
+input:focus-visible{
+   outline: 1px solid rebeccapurple;
 }
 
 .firstLetter{
