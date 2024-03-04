@@ -27,3 +27,7 @@ span{
 input:invalid ~ span{
     display: block;
 }
+
+.firstLetter{
+    text-transform: capitalize;
+}
